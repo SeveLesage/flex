@@ -1,0 +1,41 @@
+.rouge {
+    background-color: red;
+    color: white;
+}
+
+.orange {
+    background-color: orangered;
+    color: white;
+}
+
+.orangeClair {
+    background-color: orange;
+    color: white;
+}
+
+.jaune {
+    background-color: yellow;
+    color: white;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    /* grace au display flex associer a flex direction : row 
+    on affiche les element enfant de cette section en rangee les un a cote des autre */
+}
+
+.row-reverse {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.column-reverse {
+    display: flex;
+    flex-direction: column-reverse;
+}

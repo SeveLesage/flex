@@ -1,0 +1,114 @@
+/* flexbox est une solution pour aligner des element de 
+façon horizontale et aussi verticale comme float flex */
+
+.rouge {
+    width: 100px;
+    background-color: red;
+    color: white;
+}
+
+.orange {
+    width: 100px;
+    background-color: orangered;
+    color: white;
+}
+
+.orangeClair {
+    width: 100px;
+    background-color: orange;
+    color: white;
+}
+
+.jaune {
+    width: 100px;
+    background-color: yellow;
+    color: white;
+}
+
+
+/* ici on a donner une couleur au element pour bien visualiser 
+les changements dans leurs comportement */
+
+
+/* il hesite differente valeur pour justify-content
+Par defaut la valeur est flex-start au debut
+Il existe aussi flex-end entre les differents element de façon uniforme
+space-around espace autour des element 
+space-between entre les elements*/
+
+.jc-evenly {
+    display: flex;
+    justify-content: space-evenly;
+    height: 100px;
+    /* si le parent a une hauteur les enfants on par defaut cette meme hauteur 
+    c'est le comportement par défaut de align-items ""stretch etends-toi*/
+}
+
+.jc-around {
+    display: flex;
+    justify-content: space-around;
+    height: 100px;
+}
+
+.jc-between {
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+}
+
+.ordre {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.ordre .rouge {
+    order: -2;
+}
+
+.ordre .orangeClair {
+    order: 2;
+}
+
+.ordre .jaune {
+    order: 2;
+}
+
+.stretch {
+    display: flex;
+    justify-content: space-between;
+    height: 200px;
+    align-items: stretch;
+    /* valeur par defaut */
+}
+
+.baseline {
+    display: flex;
+    justify-content: space-between;
+    height: 200px;
+    align-items: baseline;
+    /* les div affiche a la hauteur de la ligne de caractere*/
+}
+
+.flexEnd {
+    display: flex;
+    justify-content: space-between;
+    height: 200px;
+    align-items: flex-end;
+    /* les div l'aligne en bas */
+}
+
+.flexStart {
+    display: flex;
+    justify-content: space-between;
+    height: 200px;
+    align-items: flex-start;
+    /* les div l'aligne a la hauteur en haut */
+}
+
+.flexCenter {
+    display: flex;
+    justify-content: space-evenly;
+    height: 200px;
+    align-items: center;
+    /* les div sont centrer */
+}
